@@ -1,0 +1,103 @@
+// Media Queries
+// --------------------------------
+
+@mixin between-breakpoints($min, $max, $orientation:null) {
+  @if $orientation == null {
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $min) and (max-width: $max) and (orientation:$orientation) {
+      @content;
+    }
+  }
+}
+
+@mixin max-breakpoint($point) {
+  @if $point == laptop {
+    @media (max-width: 1280px) { @content; }
+  }
+  @else if $point == screen-lg {
+    @media (max-width: 1200px) { @content; }
+  }
+  @else if $point == tablet-horizontal {
+    @media (max-width: 1024px) { @content; }
+  }
+  @else if $point == screen-md {
+    @media (max-width: 992px) { @content; }
+  }
+  @else if $point == screen-sm {
+    @media (max-width: 768px)  { @content; }
+  }
+  @else if $point == iphone5-horizontal {
+    @media (max-width: 568px)  { @content; }
+  }
+  @else if $point == screen-xs {
+    @media (max-width: 480px)  { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 320px)  { @content; }
+  }
+}
+
+@mixin min-breakpoint($point) {
+  @if $point == laptop {
+    @media (min-width: 1280px) { @content; }
+  }
+  @else if $point == screen-lg {
+    @media (min-width: 1200px) { @content; }
+  }
+  @else if $point == tablet-horizontal {
+    @media (min-width: 1024px) { @content; }
+  }
+  @else if $point == screen-md {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == screen-sm {
+    @media (min-width: 768px)  { @content; }
+  }
+  @else if $point == iphone5-horizontal {
+    @media (min-width: 568px)  { @content; }
+  }
+  @else if $point == screen-xs {
+    @media (min-width: 480px)  { @content; }
+  }
+  @else if $point == mobile {
+    @media (min-width: 320px)  { @content; }
+  }
+}
+
+@mixin height-breakpoint($point) {
+  @if $point == screen-lg {
+    @media (max-height: 1000px) { @content; }
+  }
+  @else if $point == screen-md {
+    @media (max-height: 850px) { @content; }
+  }
+  @else if $point == screen-sm {
+    @media (max-height: 553px)  { @content; }
+  }
+  @else if $point == screen-xs {
+    @media (max-height: 320px)  { @content; }
+  }
+}
+
+@mixin orientation($orientation, $max-width:null, $max-height:null) {
+  @if $max-width == null and $max-height == null {
+    @media screen and (min-device-width: 767px) and (min-width: 767px) and (orientation:$orientation) {
+      @content;
+    }
+  } @else if $max-width == null {
+    @media screen and (max-height:$max-height) and (min-device-width: 767px) and (min-width: 767px) and (orientation:$orientation) {
+      @content;
+    }
+  } @else if $max-height == null {
+    @media screen and (max-width:$max-width) and (min-device-width: 767px) and (min-width: 767px) and (orientation:$orientation) {
+      @content;
+    }
+  } @else {
+    @media screen and (max-width:$max-width) and (max-height:$max-height) and (min-device-width: 767px) and (min-width: 767px) and (orientation:$orientation) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+extends layout
+
+block content
+  .row.full.usage-section
+    .small-6.columns.left
+      h2 Current Energy Usage
+      .gauge
+        .high.label
+          p 1,200MW
+        .low.label
+          p 500MW
+        .yesterday.label
+          p Yesterday's Data<br/>
+            | at <span>0:00</span>
+        #gauge
+
+    .small-6.columns.right
+      h2.green
+        span.location-name Oahu
+        em.time-now 0:00
+      .using-right-now
+        .contain
+          p We Are <br/> Using
+          h1
+            em#mw-right-now 0
+          p Megawatts <br/> Right Now
+      .weekly-progress
+        h5 Weekly Progress
+        #weekly-chart
+
+  style.
+    .bg-renewable-vs-nonrenewable-0, .renewable-vs-nonrenewable-0 {
+      fill: url(#greenGradient) #88EC4D;
+    }
+    .bg-renewable-vs-nonrenewable-1, .renewable-vs-nonrenewable-1 {
+      fill: url(#redGradient) #F91C1C;
+    }
+    .bg-current-energy-BioFuel, .current-energy-BioFuel, .bg-current-energy-Solar, .current-energy-Solar, .bg-current-energy-Waste2Energy, .current-energy-Waste2Energy, .bg-current-energy-WindFarm, .current-energy-WindFarm{
+      fill: url(#greenGradient) #F91C1C;
+    }
+    .bg-current-energy-Coal, .current-energy-Coal, .bg-current-energy-Fossil_Fuel, .current-energy-Fossil_Fuel{
+      fill: url(#redGradient) #88EC4D;
+    }
+
+  .row.full.chart-slide
+
+  .placeholder-desktop
+    .chart-placeholder
+      h2 Powered By
+      img.isvg(src="img/BPF_HECO_logos.svg", alt="Blue Planet Foundation And HECO")

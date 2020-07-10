@@ -1,0 +1,186 @@
+.spaghetti-slide {
+    @extend %bg-dark;
+}
+
+.top {
+    border-bottom: 1px solid rgba($lite-text, 0.3);
+    h3 {
+        border-bottom: none;
+        float: left;
+        width: 100%;
+    }
+    ul {
+        float: right;
+        @extend %removeListingStyle;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 0;
+        li {
+            float: left;
+            min-width: 215px;
+            width: 100%;
+            &:first-child {
+                background: #292929;
+            }
+            &:last-child {
+                // margin-right: 15px;
+                margin: 0;
+                @include orientation(landscape) {
+                  margin-right: 0;
+                }
+            }
+            p {
+                color: $primary-color;
+                margin-bottom: 0;
+                display: block;
+                height: 70px;
+                padding: 15px 30px;
+                @extend %fontSize25px;
+                @extend %letterSpacing;
+                min-width: 215px;
+                width: 100%;
+                text-align: center;
+                @include max-breakpoint(screen-sm) {
+                  height: 53px;
+                  font-size: 18px;
+                }
+                @include orientation(landscape) {
+                  height: 73px;
+                  padding: 25px 25px;
+                }
+            }
+        }
+    }
+  .spaghetti-day-icon {
+    padding-top: 12px;
+    @include orientation(landscape) {
+      padding-top: 15px;
+    }
+    img {
+      height: 100%;
+    }
+  }
+}
+
+.spaghetti {
+    // border-bottom: 1px solid rgba($lite-text, 0.3);
+    // height: 120px;
+    > div {
+        height: 100%;
+    }
+    .small-2 {
+        border-right: 1px solid rgba($lite-text, 0.3);
+    }
+    p {
+        color: $primary-color;
+        margin-bottom: 0;
+        display: block;
+        @extend %fontSize25px;
+        @extend %letterSpacing;
+    }
+}
+
+.row.spaghetti-legend {
+    height: 140px;
+    @include orientation(landscape) {
+      margin-top: -2px;
+      border-bottom: 1px solid rgba($lite-text, 0.3);
+    }
+    ul {
+        margin-left: 25px;
+        padding: 0 30px;
+        margin-top: 10px;
+        @extend %removeListingStyle;
+        li {
+            margin-top: 15px;
+            margin-left: 15px;
+            float: left;
+            @include border-radius(4px);
+            &.Coal {
+                background: #737373;
+            }
+            &.Solar {
+                background: #EAFD52;
+                p {
+                  color: #333;
+                }
+            }
+            &.BioFuel {
+                background: #3DF35A;
+                p {
+                  color: #333;
+                }
+            }
+            &.WindFarm {
+                background: #0572F6;
+            }
+            &.Fossil_Fuel {
+                background: #6E4A2D;
+            }
+            &.Waste2Energy {
+                background: #E27B29;
+            }
+            p {
+                color: $lite-text;
+                margin-bottom: 0;
+                display: block;
+                padding: 5px 20px;
+                @extend %fontSize25px;
+                @extend %letterSpacing;
+                @include max-breakpoint(screen-sm) {
+                  font-size: 18px;
+                  padding: 2px 13px;
+                }
+            }
+        }
+    }
+}
+
+.spaghetti-key {
+  text-transform: uppercase;
+  fill: #0075D0;
+  font-family: $liteFontFamily;
+  // font-size: 45px;
+  font-weight: lighter;
+  @include max-breakpoint(screen-sm) {
+    font-size: 35px;
+  }
+}
+
+path.line.chart {
+  fill: transparent;
+  stroke-width: 5px;
+  &.Coal {
+      stroke: #737373;
+  }
+  &.BioFuel {
+      stroke: #3DF35A;
+  }
+  &.WindFarm {
+      stroke: #0572F6;
+  }
+  &.Solar {
+      stroke: #EAFD52;
+  }
+  &.Waste2Energy {
+      stroke: #E27B29;
+  }
+  &.Fossil_Fuel {
+      stroke: #6E4A2D;
+  }
+}
+
+.time-marker-text {
+  margin-bottom: 0;
+  display: block;
+  height: 70px;
+  padding: 15px 30px;
+  @extend %fontSize25px;
+  @extend %letterSpacing;
+  text-anchor: middle;
+  @include max-breakpoint(screen-sm) {
+    height: 53px;
+    font-size: 18px;
+  }
+}

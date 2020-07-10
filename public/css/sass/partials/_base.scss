@@ -1,0 +1,181 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    color: $lite-text;
+    @extend %liteFont;
+    @extend %bg-dark;
+    min-width: 768px;
+    @include max-breakpoint(screen-sm) {
+        max-width: 768px;
+    }
+    @include orientation(landscape) {
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $lite-text;
+}
+
+.full {
+    max-width: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.left {
+    background: $secondary-color;
+    min-height: 500px;
+    padding: 0;
+    @include orientation(landscape) {
+        min-height: initial;
+    }
+}
+
+.right {
+    background: $dark-bg;
+    min-height: 500px;
+    padding: 0;
+    @include orientation(landscape) {
+        min-height: initial;
+    }
+}
+
+.using-right-now {
+    color: $lite-text;
+    position: relative;
+    @include min-breakpoint(screen-sm) {
+        height: 356px;
+    }
+    @include max-breakpoint(screen-sm) {
+        height: 268px;
+    }
+    p {
+        font-size: 44px;
+        line-height: 1.2em;
+        margin-bottom: 0;
+        @extend %letterSpacing;
+        @extend %paddingLeft;
+        @include max-breakpoint(screen-sm) {
+            font-size: 32px;
+            line-height: 38px;
+        }
+        @include orientation(landscape, 1280px) {
+            font-size: 25px;
+            line-height: 1em;
+        }
+        @include orientation(landscape, null, 850px) {
+            font-size: 21px;
+        }
+        @include height-breakpoint(screen-sm) {
+            font-size: 18px;
+        }
+        &:first-child {
+            margin-top: -15px;
+            @include orientation(landscape) {
+                margin-top: 0;
+            }
+        }
+        &:last-child {
+            color: $primary-color;
+        }
+    }
+    .contain {
+        position: absolute;
+        top: 50%;
+        @include transform(translateY(-50%));
+    }
+}
+
+.clearfix {
+    @include clearfix();
+}
+
+.dead-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+    text-align: center;
+}
+
+.usage-section {
+    @include orientation(landscape) {
+        width: 50%;
+        float: left;
+        border-right: 1px solid rgba($lite-text, 0.3);
+    }
+    .weekly-progress {
+        @include orientation(landscape) {
+            bottom: 0;
+            position: absolute;
+        }
+    }
+    .left h2 {
+      @include between-breakpoints(970px, 1500px, landscape) {
+        line-height: 28px;
+        padding-top: 9px;
+        padding-bottom: 8px;
+      }
+      @include between-breakpoints(767px, 799px, landscape) {
+        font-size: 35px;
+        padding-top: 24px;
+        padding-bottom: 35px;
+      }
+      @include max-breakpoint(screen-sm) {
+        font-size: 22px;
+        padding-top: 20px;
+        padding-bottom: 15px;
+      }
+    }
+}
+
+.placeholder-desktop {
+    display: none;
+    visibility: hidden;
+    @include orientation(landscape) {
+        display: block;
+        visibility: visible;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: calc(50% - 38px);
+        background: $dark-bg;
+    }
+    @include orientation(landscape, null, 900px) {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+body.mobile-portrait {
+    // .left h2 {
+    //     font-size: 30px;
+    //     padding-top: 20px;
+    //     padding-bottom: 20px;
+    //     line-height: 57px;
+    // }
+    h2 {
+        font-size: 31px;
+        line-height: 50px;
+        padding-top: 5px;
+        padding-bottom: 7px;
+
+
+        &.green {
+            padding-left: 70px;
+            &:before {
+                @include fill-circle(20px, $success-color);
+                margin-top: 13px;
+            }
+        }
+    }
+}

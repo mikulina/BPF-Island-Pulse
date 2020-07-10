@@ -1,0 +1,43 @@
+%liteFont {
+    font-family: $liteFontFamily;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+%removePadding {
+    margin-left: -0.9375em;
+    margin-right: -0.9375em;
+}
+
+%paddingLeft{
+    padding-left: 30px;
+}
+
+%letterSpacing{
+    letter-spacing: 0.1em;
+}
+
+%pesudo{
+    content: "";
+    position: absolute;
+}
+
+%bg-dark {
+    background: $dark-bg;
+}
+
+%removeListingStyle {
+    list-style: none;
+    margin-left: -25px;
+    margin-bottom: 0;
+}
+
+%fontSize25px {
+    font-size: 25px;
+    font-weight: lighter;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    @include orientation(landscape) {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "Date": "12/10/2013",
+    "non_renewable": 39020.1,
+    "renewable": 4196.2
+  },
+  {
+    "Date": "12/11/2013",
+    "non_renewable": 40279,
+    "renewable": 2623.2
+  },
+  {
+    "Date": "12/12/2013",
+    "non_renewable": 31490.2,
+    "renewable": 1932.6
+  },
+  {
+    "Date": "12/13/2013",
+    "non_renewable": 40547.8,
+    "renewable": 2964.9
+  },
+  {
+    "Date": "12/14/2013",
+    "non_renewable": 36862.5,
+    "renewable": 4177
+  }
+]

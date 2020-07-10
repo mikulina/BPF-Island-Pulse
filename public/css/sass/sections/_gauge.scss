@@ -1,0 +1,170 @@
+.gauge {
+    position: relative;
+    height: 835px;
+    // height: calc(100% - 75px);
+    @include background-image(radial-gradient(closest-corner circle at right center, rgba(255,255,255, 0.55) 0%, rgba(0, 0, 0, 0) 100%));
+    @include max-breakpoint(screen-sm) {
+        height: 640px;
+    }
+    @include orientation(landscape) {
+        height: 1px;
+    }
+    &:before {
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: $secondary-color;
+        @include animation(2.5s pulseOpacity ease-in-out infinite);
+        @extend %pesudo;
+        outline: 1px solid transparent;
+    }
+    .label {
+        position: absolute;
+        background: rgba($primary-color, 0.6);
+        @extend %fontSize25px;
+        @include max-breakpoint(screen-sm) {
+            font-size: 18px;
+            line-height: 1.2em;
+        }
+        @include height-breakpoint(screen-sm) {
+            font-size: 14px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+        &.high {
+            right: 15px;
+            @include border-radius(4px 4px 0 4px);
+            @include orientation(landscape) {
+                top: 15px;
+            }
+            &:after {
+                width: 0;
+                height: 0;
+                right: 0;
+                top: 100%;
+                @extend %pesudo;
+                @include triangle-down-right(25px, 27px, rgba($primary-color, 0.6));
+                @include orientation(landscape) {
+                    @include triangle-down-right(15px, 12px, rgba($primary-color, 0.6));
+                }
+                @include height-breakpoint(screen-sm) {
+                    @include triangle-down-right(15px, 12px, rgba($primary-color, 0.6));
+                }
+                @include max-breakpoint(screen-sm) {
+                    @include triangle-down-right(15px, 17px, rgba($primary-color, 0.6));
+                }
+            }
+        }
+        &.low {
+            bottom: 15px;
+            right: 15px;
+            @include border-radius(4px 0 4px 4px);
+            &:after {
+                width: 0;
+                height: 0;
+                right: 0;
+                bottom: 100%;
+                @extend %pesudo;
+                @include triangle-up-right(25px, 27px, rgba($primary-color, 0.6));
+                @include orientation(landscape) {
+                    @include triangle-up-right(15px, 12px, rgba($primary-color, 0.6));
+                }
+                @include height-breakpoint(screen-sm) {
+                    @include triangle-up-right(15px, 12px, rgba($primary-color, 0.6));
+                }
+                @include max-breakpoint(screen-sm) {
+                    @include triangle-up-right(15px, 17px, rgba($primary-color, 0.6));
+                }
+            }
+        }
+        &.yesterday {
+            background: rgba(249, 27, 27, 0.35);
+            bottom: 15px;
+            left: 30px;
+            @include border-radius(4px);
+            p {
+                line-height: 1.3;
+            }
+        }
+    }
+}
+
+#gauge {
+    position: absolute;
+    right: -5.5%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    z-index: 1;
+    @include orientation(landscape) {
+        margin: 0;
+        top: 50%;
+        @include transform(translateY(-50%));
+    }
+}
+
+.gauge-lines {
+    stroke: #1BA5D6;
+}
+
+// .outline {
+//     margin-top: 125px;
+//     margin-bottom: 125px;
+//     left: 100%;
+//     @include transform(rotate(91deg) translateX(-50%));
+//     @include transform-origin(0);
+//     @include put-on-circle($gauge-size, $gauge-border, rgba(#FFFFFF, 0.1), 100, $gauge-item-width, $gauge-item-height, $primary-color);
+//     li.active {
+//         background: #FFFFFF;
+//     }
+// }
+
+// .needle {
+//     position: absolute;
+//     top: 50%;
+//     left: 100%;
+//     height: $gauge-size / 1.5;
+//     width: $needle-width;
+//     background: #FFFFFF;
+//     z-index: 10;
+//     @include border-radius(10px);
+//     @include transform(translateX(-50%) translateY(0%) rotate(0));
+//     @include transform-origin(0, 0%);
+//     @include transition(all 1s cubic-bezier(.22,.6,.12,.97));
+//     &:before, &:after {
+//         @extend %pesudo;
+//     }
+//     &:before {
+//         bottom: $gauge-border - ($gauge-item-height / 2);
+//         width: $needle-width;
+//         height: 90px;
+//         background: $alert-color;
+//     }
+//     &:after {
+//         top: -($gauge-size / 96.42);
+//         @include transform(translate(-50%));
+//         @include fill-circle(($gauge-size / 96.42), $alert-color);
+//         @include box-shadow(0 0 0 ($gauge-size / 30) #FFFFFF);
+//     }
+// }
+
+// .inside {
+//     position: absolute;
+//     top: 50%;
+//     left: 100%;
+//     @include fill-circle(($gauge-size / 1.8), rgba(desaturate($primary-color, 5%), 0.4));
+//     @include transform(translateX(-50%) translateY(-50%));
+// }
+
+@include keyframes(pulseOpacity){
+    0% {
+        @include opacity(0);
+    }
+    50% {
+        @include opacity(1);
+    }
+    100% {
+        @include opacity(0);
+    }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "island-pulse",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "10.13.0"
+  },
+  "scripts": {
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "build": "bower install && docker-compose -f docker-compose.yml build",
+    "docker:login": "$(aws ecr get-login --no-include-email --region us-west-1 --profile --registry-ids 572863896041)",
+    "docker:push": "docker-compose push"
+  },
+  "dependencies": {
+    "MD5": "~1.2.0",
+    "express": "~3.3.4",
+    "jade": "~0.34.0",
+    "lodash": "~2.4.1",
+    "moment": "2.23.0",
+    "moment-timezone": "0.5.23",
+    "mysql2": "^1.6.4",
+    "sqlbits": "~2.1.0",
+    "sync": "^0.2.2"
+  },
+  "devDependencies": {
+    "bower": "1.8.4",
+    "connect-cache-manifest": "^0.2.0",
+    "eyes": "0.1.8",
+    "grunt": "~0.4.1",
+    "grunt-bowercopy": "^1.1.0",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-develop": "~0.2.2",
+    "grunt-fingerprint": "^0.2.0",
+    "load-grunt-tasks": "~0.2.0",
+    "request": "~2.27.0",
+    "time-grunt": "~0.1.1"
+  }
+}

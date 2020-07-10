@@ -1,0 +1,425 @@
+[
+    {
+        "dateTime": "Wed Jul 09 2014 12:00:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 644.8,
+        "Solar": 125.5,
+        "Coal": 180.5,
+        "Waste2Energy": 43.6,
+        "WindFarm": 33.7
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 11:30:00 GMT-1000",
+        "WindFarm": 33.5,
+        "Fossil_Fuel": 622,
+        "BioFuel": 0,
+        "Waste2Energy": 42.1,
+        "Solar": 108.3,
+        "Coal": 180.2
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 11:00:00 GMT-1000",
+        "Coal": 179.1,
+        "Fossil_Fuel": 636.7,
+        "WindFarm": 28.8,
+        "Solar": 135.8,
+        "BioFuel": 0,
+        "Waste2Energy": 48.1
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 10:30:00 GMT-1000",
+        "Waste2Energy": 46.2,
+        "Fossil_Fuel": 643.6,
+        "Coal": 180.4,
+        "BioFuel": 0,
+        "WindFarm": 34.1,
+        "Solar": 84.2
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 10:00:00 GMT-1000",
+        "Solar": 62.2,
+        "Fossil_Fuel": 655.7,
+        "Waste2Energy": 45.9,
+        "WindFarm": 30.3,
+        "Coal": 180.2,
+        "BioFuel": 0
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 09:30:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 636.3,
+        "Solar": 100.4,
+        "Coal": 180,
+        "Waste2Energy": 47.2,
+        "WindFarm": 26.3
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 09:00:00 GMT-1000",
+        "WindFarm": 16.7,
+        "Fossil_Fuel": 654.5,
+        "BioFuel": 0,
+        "Waste2Energy": 46.7,
+        "Solar": 58.9,
+        "Coal": 180.4
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 08:30:00 GMT-1000",
+        "Coal": 179.8,
+        "Fossil_Fuel": 648.1,
+        "WindFarm": 20.3,
+        "Solar": 51.6,
+        "BioFuel": 0,
+        "Waste2Energy": 44.6
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 08:00:00 GMT-1000",
+        "Waste2Energy": 44,
+        "Fossil_Fuel": 634.2,
+        "Coal": 180.6,
+        "BioFuel": 0,
+        "WindFarm": 21.5,
+        "Solar": 41.3
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 07:30:00 GMT-1000",
+        "Solar": 25.6,
+        "Fossil_Fuel": 627.6,
+        "Waste2Energy": 42.6,
+        "WindFarm": 16.7,
+        "Coal": 179.6,
+        "BioFuel": 0
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 07:00:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 605.1,
+        "Solar": 15.8,
+        "Coal": 179.1,
+        "Waste2Energy": 42,
+        "WindFarm": 15.8
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 06:30:00 GMT-1000",
+        "WindFarm": 9.5,
+        "Fossil_Fuel": 584.5,
+        "BioFuel": 0,
+        "Waste2Energy": 43.6,
+        "Solar": 2.7,
+        "Coal": 180.2
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 06:00:00 GMT-1000",
+        "Coal": 180,
+        "Fossil_Fuel": 540.8,
+        "WindFarm": 17.1,
+        "Solar": 0,
+        "BioFuel": 0,
+        "Waste2Energy": 40
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 05:30:00 GMT-1000",
+        "Waste2Energy": 40.4,
+        "Fossil_Fuel": 513.1,
+        "Coal": 179.3,
+        "BioFuel": 0,
+        "WindFarm": 9.2,
+        "Solar": 0
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 05:00:00 GMT-1000",
+        "Solar": 0,
+        "Fossil_Fuel": 484.6,
+        "Waste2Energy": 41,
+        "WindFarm": 8.7,
+        "Coal": 162.2,
+        "BioFuel": 0
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 04:30:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 439.1,
+        "Solar": 0,
+        "Coal": 180.1,
+        "Waste2Energy": 41.9,
+        "WindFarm": 9.6
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 04:00:00 GMT-1000",
+        "WindFarm": 1.7,
+        "Fossil_Fuel": 431,
+        "BioFuel": 0,
+        "Waste2Energy": 42.3,
+        "Solar": 0,
+        "Coal": 179.4
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 03:30:00 GMT-1000",
+        "Coal": 180,
+        "Fossil_Fuel": 418.4,
+        "WindFarm": 8.8,
+        "Solar": 0,
+        "BioFuel": 0,
+        "Waste2Energy": 43.9
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 03:00:00 GMT-1000",
+        "Waste2Energy": 42.8,
+        "Fossil_Fuel": 423.4,
+        "Coal": 179.4,
+        "BioFuel": 0,
+        "WindFarm": 6.9,
+        "Solar": 0
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 02:30:00 GMT-1000",
+        "Solar": 0,
+        "Fossil_Fuel": 401.3,
+        "Waste2Energy": 41.1,
+        "WindFarm": 36.8,
+        "Coal": 179.9,
+        "BioFuel": 0
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 02:00:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 382.1,
+        "Solar": 0,
+        "Coal": 171.1,
+        "Waste2Energy": 41.8,
+        "WindFarm": 72.5
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 01:30:00 GMT-1000",
+        "WindFarm": 46.3,
+        "Fossil_Fuel": 413.4,
+        "BioFuel": 0,
+        "Waste2Energy": 43.7,
+        "Solar": 0,
+        "Coal": 179.9
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 01:00:00 GMT-1000",
+        "Coal": 178.1,
+        "Fossil_Fuel": 437.9,
+        "WindFarm": 41.8,
+        "Solar": 0,
+        "BioFuel": 0,
+        "Waste2Energy": 42.5
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 00:30:00 GMT-1000",
+        "Waste2Energy": 42,
+        "Fossil_Fuel": 471.9,
+        "Coal": 178.4,
+        "BioFuel": 0,
+        "WindFarm": 30.6,
+        "Solar": 0
+    },
+    {
+        "dateTime": "Wed Jul 09 2014 00:00:00 GMT-1000",
+        "Solar": 0,
+        "Fossil_Fuel": 505.3,
+        "Waste2Energy": 41.8,
+        "WindFarm": 33.8,
+        "Coal": 177.7,
+        "BioFuel": 0
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 23:30:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 550.3,
+        "Solar": 0,
+        "Coal": 175.1,
+        "Waste2Energy": 43.2,
+        "WindFarm": 30.8
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 23:00:00 GMT-1000",
+        "WindFarm": 20.9,
+        "Fossil_Fuel": 600.5,
+        "BioFuel": 0,
+        "Waste2Energy": 42.1,
+        "Solar": 0,
+        "Coal": 180.1
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 22:30:00 GMT-1000",
+        "Coal": 179.9,
+        "Fossil_Fuel": 628.4,
+        "WindFarm": 42.9,
+        "Solar": 0,
+        "BioFuel": 0,
+        "Waste2Energy": 41.7
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 22:00:00 GMT-1000",
+        "Waste2Energy": 42.3,
+        "Fossil_Fuel": 686.7,
+        "Coal": 178.4,
+        "BioFuel": 0,
+        "WindFarm": 35.7,
+        "Solar": 0
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 21:30:00 GMT-1000",
+        "Solar": 0,
+        "Fossil_Fuel": 741.3,
+        "Waste2Energy": 42.6,
+        "WindFarm": 27.6,
+        "Coal": 180.2,
+        "BioFuel": 0
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 21:00:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 762.5,
+        "Solar": 0,
+        "Coal": 179.1,
+        "Waste2Energy": 43.2,
+        "WindFarm": 32.4
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 20:30:00 GMT-1000",
+        "WindFarm": 34.8,
+        "Fossil_Fuel": 788.7,
+        "BioFuel": 0,
+        "Waste2Energy": 42.2,
+        "Solar": 0,
+        "Coal": 180.1
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 20:00:00 GMT-1000",
+        "Coal": 180.1,
+        "Fossil_Fuel": 796.2,
+        "WindFarm": 44.7,
+        "Solar": 0,
+        "BioFuel": 0,
+        "Waste2Energy": 42.8
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 19:30:00 GMT-1000",
+        "Waste2Energy": 43.1,
+        "Fossil_Fuel": 794.8,
+        "Coal": 179.8,
+        "BioFuel": 0,
+        "WindFarm": 40.2,
+        "Solar": 0
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 19:00:00 GMT-1000",
+        "Solar": 3.3,
+        "Fossil_Fuel": 785.9,
+        "Waste2Energy": 43.7,
+        "WindFarm": 34.1,
+        "Coal": 179.3,
+        "BioFuel": 0
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 18:30:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 784.3,
+        "Solar": 13.8,
+        "Coal": 180.9,
+        "Waste2Energy": 47.4,
+        "WindFarm": 25.4
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 18:00:00 GMT-1000",
+        "WindFarm": 25.8,
+        "Fossil_Fuel": 779.6,
+        "BioFuel": 0,
+        "Waste2Energy": 44.9,
+        "Solar": 26.7,
+        "Coal": 179.8
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 17:30:00 GMT-1000",
+        "Coal": 179.9,
+        "Fossil_Fuel": 768.4,
+        "WindFarm": 19.5,
+        "Solar": 49.2,
+        "BioFuel": 0,
+        "Waste2Energy": 46.3
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 17:00:00 GMT-1000",
+        "Waste2Energy": 48.2,
+        "Fossil_Fuel": 740.2,
+        "Coal": 179.7,
+        "BioFuel": 0,
+        "WindFarm": 22.4,
+        "Solar": 66.4
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 16:30:00 GMT-1000",
+        "Solar": 90.6,
+        "Fossil_Fuel": 720.8,
+        "Waste2Energy": 48,
+        "WindFarm": 21.3,
+        "Coal": 180.3,
+        "BioFuel": 0
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 16:00:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 705.4,
+        "Solar": 101.1,
+        "Coal": 179.7,
+        "Waste2Energy": 47.8,
+        "WindFarm": 20
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 15:30:00 GMT-1000",
+        "WindFarm": 23.4,
+        "Fossil_Fuel": 682.6,
+        "BioFuel": 0,
+        "Waste2Energy": 46.6,
+        "Solar": 97.6,
+        "Coal": 178.9
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 15:00:00 GMT-1000",
+        "Coal": 179.3,
+        "Fossil_Fuel": 660.7,
+        "WindFarm": 33.9,
+        "Solar": 109.2,
+        "BioFuel": 0,
+        "Waste2Energy": 45.4
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 14:30:00 GMT-1000",
+        "Waste2Energy": 47.1,
+        "Fossil_Fuel": 638.6,
+        "Coal": 180.3,
+        "BioFuel": 0,
+        "WindFarm": 33.3,
+        "Solar": 119.7
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 14:00:00 GMT-1000",
+        "Solar": 141.9,
+        "Fossil_Fuel": 622.8,
+        "Waste2Energy": 48.1,
+        "WindFarm": 41.7,
+        "Coal": 179.8,
+        "BioFuel": 0
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 13:30:00 GMT-1000",
+        "BioFuel": 0,
+        "Fossil_Fuel": 630.9,
+        "Solar": 134.8,
+        "Coal": 179.9,
+        "Waste2Energy": 48,
+        "WindFarm": 37.9
+    },
+    {
+        "dateTime": "Tue Jul 08 2014 13:00:00 GMT-1000",
+        "WindFarm": 26.4,
+        "Fossil_Fuel": 632.4,
+        "BioFuel": 0,
+        "Waste2Energy": 47.3,
+        "Solar": 59,
+        "Coal": 179.1
+    }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "island-pulse",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "moment": "~2.7.0",
+    "moment-timezone": "~0.1.0"
+  }
+}

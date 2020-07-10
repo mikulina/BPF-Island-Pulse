@@ -1,0 +1,53 @@
+/*!
+ * Island Pulse
+ * -----------------------
+ */
+
+// START SCSS
+// Run following command relative to root folder
+// $ sass --watch css:css
+// It will detect changes in "sass" folder and overide "style.css"
+
+@import "compass";
+
+// Foundation
+// ---------------------------------------------------
+@import "sass/framework/foundation-settings"; // Global Foundation Settings
+@import "sass/framework/normalize";
+@import "foundation";
+
+// Mixin, Variables, Etc
+// ---------------------------------------------------
+@import "sass/framework/config";
+@import "sass/framework/media-queries";
+@import "sass/framework/colors";
+@import "sass/framework/typography";
+@import "sass/framework/mixin";
+@import "sass/framework/placeholder";
+
+// Modules
+// ---------------------------------------------------
+@import "sass/modules/buttons";
+@import "sass/modules/forms";
+@import "sass/modules/headings";
+@import "sass/modules/images";
+@import "sass/modules/links";
+@import "sass/modules/tables";
+
+// Page Styles
+// ---------------------------------------------------
+// Partials
+@import "sass/partials/base";
+@import "sass/partials/header";
+@import "sass/partials/navigation";
+@import "sass/partials/footer";
+
+// Sections
+@import "sass/sections/weekly-progress";
+@import "sass/sections/gauge";
+@import "sass/sections/chart-slide";
+@import "sass/sections/spaghetti-slide";
+
+
+// Typography
+@import "sass/modules/fonts";

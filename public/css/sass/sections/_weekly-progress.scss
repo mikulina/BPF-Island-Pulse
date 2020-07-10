@@ -1,0 +1,54 @@
+.weekly-progress, .weekly-progress-chart {
+  background: lighten($lite-bg, 5%);
+  @extend %fontSize25px;
+  h5 {
+    font-family: $boldFontFamily;
+  }
+}
+
+#weekly-chart {
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+}
+
+.weekly-day, .weekly-value, .weekly-label{
+  font-size: 24px;
+  line-height: 1.6em;
+  text-rendering: optimizeLegibility;
+  fill: $gray-text;
+  @extend %liteFont;
+  &.high, &.low, &.weekly-label, &.today {
+    font-family: $boldFontFamily;
+    font-weight: normal;
+  }
+  &.high {
+    fill: #f91c1c;
+  }
+  &.low, &.weekly-label{
+    fill: #0075d0;
+  }
+  @include max-breakpoint(screen-sm) {
+    font-size: 18px;
+    line-height: 1.2em;
+  }
+  @include orientation(landscape, 1400px) {
+    font-size: 20px;
+  }
+  @include orientation(landscape, null, 800px) {
+    font-size: 16px;
+  }
+  @include height-breakpoint(screen-sm) {
+    font-size: 14px;
+  }
+}
+
+.weekly-day {
+  fill: #0075d0;
+  letter-spacing: 0.1em;
+}
+
+.weekly-grid-lines {
+  stroke: #898989;
+  stroke-width: 1;
+}

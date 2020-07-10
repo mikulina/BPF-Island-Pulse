@@ -1,0 +1,201 @@
+h1 {
+    font-family: $boldFontFamily;
+    color: $primary-color;
+    margin-top: 0;
+    line-height: 51px;
+    @extend %letterSpacing;
+    @extend %paddingLeft;
+    margin-bottom: 0.2em;
+    font-weight: normal;
+    @include max-breakpoint(screen-sm) {
+        line-height: 38px;
+    }
+    @include orientation(landscape, 1280px) {
+        line-height: 0;
+    }
+    @include orientation(landscape, null, 850px) {
+        line-height: 0;
+    }
+    #mw-right-now {
+        display: block;
+        font-style: normal;
+        font-size: 105px;
+        font-weight: normal;
+        line-height: 126px;
+        letter-spacing: 0;
+        color: $primary-color;
+        @include max-breakpoint(screen-sm) {
+            font-size: 75px;
+            line-height: 90px;
+        }
+        @include orientation(landscape, 1280px) {
+            font-size: 70px;
+            line-height: 90px;
+            padding-bottom: 7px;
+        }
+        @include orientation(landscape, null, 850px) {
+            font-size: 70px;
+            line-height: 80px;
+            padding-bottom: 10px;
+        }
+        @include height-breakpoint(screen-sm) {
+            font-size: 55px;
+            line-height: 70px;
+            padding-bottom: 0;
+        }
+    }
+    // small {
+    //     color: $primary-color;
+    //     font-size: 44px;
+    //     @extend %liteFont;
+    //     line-height: 0;
+    //     @include max-breakpoint(screen-sm) {
+    //         font-size: 32px;
+    //     }
+    //     @include orientation(landscape, 1280px) {
+    //         font-size: 25px;
+    //         line-height: 1em;
+    //     }
+    //     @include orientation(landscape, null, 850px) {
+    //         font-size: 21px;
+    //         line-height: 1em;
+    //     }
+    // }
+}
+
+h2 {
+    font-size: 44px;
+    border-bottom: 1px solid rgba($lite-text, 0.3);
+    padding-top: 15px;
+    padding-bottom: 18px;
+    @extend %letterSpacing;
+    @extend %liteFont;
+    @extend %paddingLeft;
+    font-weight: normal;
+    @include max-breakpoint(screen-sm) {
+        font-size: 32px;
+        line-height: 50px;
+    }
+    @include orientation(landscape) {
+        font-size: 25px;
+        margin: 0;
+        padding-top: 18px;
+        padding-bottom: 20px;
+    }
+    &.green {
+        padding-left: 80px;
+        @include max-breakpoint(screen-sm) {
+            padding-left: 70px;
+        }
+        @include orientation(landscape) {
+            padding-left: 60px;
+        }
+        &:before {
+            @include fill-circle(30px, $success-color);
+            margin-top: 15px;
+            left: 30px;
+            @extend %pesudo;
+            @include max-breakpoint(screen-sm) {
+                @include fill-circle(20px, $success-color);
+                margin-top: 13px;
+            }
+            @include orientation(landscape) {
+                width: 18px;
+                height: 18px;
+                margin-top: 9px;
+                left: 25px;
+            }
+        }
+    }
+    .time-now {
+        color: $primary-color;
+        font-style: normal;
+        float: right;
+        padding-right: 30px;
+        font-weight: normal;
+        @include max-breakpoint(screen-md) {
+            float: none;
+        }
+        @include max-breakpoint(screen-sm) {
+            min-width: 185px;
+            float: right;
+            text-align: right;
+            position: absolute;
+            right: 0;
+        }
+        @include orientation(landscape, 1425px) {
+            font-size: 16px;
+            margin-top: 7px;
+            padding-right: 15px;
+        }
+    }
+}
+
+h3 {
+    font-family: $boldFontFamily;
+    border-bottom: 1px solid rgba($lite-text, 0.3);
+    font-weight: normal;
+    font-size: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    @extend %paddingLeft;
+    @extend %letterSpacing;
+    @include max-breakpoint(screen-sm) {
+        font-size: 18px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    @include orientation(landscape) {
+        margin: 0;
+        padding-top: 19px;
+        padding-bottom: 19px;
+    }
+    @include orientation(landscape, 1425px) {
+        font-size: 16px;
+        padding-top: 25px;
+        padding-bottom: 26px;
+    }
+}
+
+h4, .chart-slide text {
+    font-family: $regFontFamily;
+    position: absolute;
+    margin-top: 0;
+    margin-bottom: 0;
+    right: 9%;
+    top: 50%;
+    @include transform(translateY(-50%));
+    font-weight: normal;
+    text-shadow: 0 0 40px rgba(#000, 0.7);
+    em {
+        font-family: $liteFontFamily;
+        font-style: normal;
+        font-weight: lighter;
+    }
+}
+
+h5 {
+    font-size: 20px;
+    font-family: $regFontFamily;
+    background: $dark-bg;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top: 1px solid rgba($lite-text, 0.3);
+    @extend %paddingLeft;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @extend %letterSpacing;
+    @include max-breakpoint(screen-sm) {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    @include orientation(landscape) {
+        font-size: 16px;
+    }
+    @include height-breakpoint(screen-sm) {
+        font-size: 14px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+}

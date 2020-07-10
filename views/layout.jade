@@ -1,0 +1,12 @@
+block variables
+doctype 5
+html(manifest='/application.manifest')
+  head
+    - var title = title || 'Island Pulse'
+    title #{title}
+    link(rel="shortcut icon", href="/img/favicon.ico")
+    //- meta(name='viewport', content='width=768, initial-scale=1')
+    link(rel='stylesheet', href='/css/style.css?#{fingerprint}')
+  body
+    block content
+    include partials/scripts

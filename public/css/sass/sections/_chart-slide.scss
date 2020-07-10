@@ -1,0 +1,175 @@
+.chart-slide {
+    @extend %bg-dark;
+    min-height: 725px;
+    position: relative;
+    @include max-breakpoint(screen-sm) {
+        min-height: 610px;
+    }
+    @include orientation(landscape) {
+        min-height: initial;
+        height: 50%;
+        width: 50%;
+        float: left;
+    }
+    @include orientation(landscape, null, 900px) {
+        height: 100%;
+    }
+    > .row {
+        @include orientation(landscape) {
+            margin: 0;
+        }
+    }
+}
+
+#renewable-vs-nonrenewable, #current-energy {
+    padding: 0;
+}
+
+.bar-text {
+    fill: #fff;
+    text-shadow: 0 0 40px rgba(#000, 0.7);
+    font-weight: normal;
+}
+
+.grid {
+    line {
+        stroke: $dark-bg;
+    }
+    text {
+        display: none;
+    }
+    path {
+        display: none;
+    }
+}
+
+.chart-placeholder {
+    width: 70%;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    @include transform(translateX(-50%) translateY(-50%));
+    img, svg {
+        width: 100%;
+    }
+    h2 {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        margin-bottom: 0.5em;
+    }
+}
+
+// .progress-bar {
+//     position: relative;
+//     border-bottom: 1px solid rgba($lite-text, 0.3);
+//     > div {
+//         height: 100%;
+//     }
+//     ul {
+//         width: 100%;
+//         height: 100%;
+//         position: relative;
+//         @include background-image(linear-gradient(left, $success-color, $fade-cold));
+//         @extend %removeListingStyle;
+//     }
+//     li {
+//         display: block;
+//         background: rgba(#000, 0.75);
+//         height: 100%;
+//         width: 1.1%;
+//         position: absolute;
+//         @include transition(all 0.5s);
+//         &.active {
+//             opacity: 0;
+//         }
+//         &:nth-child(even) {
+//             width: 1.1%;
+//             background: $dark-bg;
+//             &.active {
+//                 opacity: 1;
+//             }
+//         }
+//     }
+// }
+
+// .progress-bar {
+//     .big & {
+//         padding-top: 30px;
+//         padding-bottom: 30px;
+//         height: 250px;
+//         h4 {
+//             font-size: 105px;
+//         }
+//         img {
+//             max-width: 200px;
+//             width: 70%;
+//         }
+//     }
+//     .small & {
+//         padding-top: 15px;
+//         padding-bottom: 15px;
+//         height: 100px;
+//         h4 {
+//             font-size: 36px;
+//         }
+//         img {
+//             max-height: 40px;
+//             max-width: 80px;
+//             width: 50%;
+//         }
+//         p {
+//             font-size: 0.875em;
+//             line-height: 1.1em;
+//             margin-top: 5px;
+//             margin-bottom: 0;
+//         }
+//         .small-2 {
+//             border-right: 1px solid rgba($lite-text, 0.3);
+//             height: 100px;
+//             margin-top: -15px;
+//         }
+//     }
+//     &.green ul {
+//         @include background-image(linear-gradient(left, $success-color, $fade-cold));
+//     }
+//     &.red ul {
+//         @include background-image(linear-gradient(left, $alert-color, $fade-cold));
+//     }
+// }
+
+// @for $i from 0 through $progress-bar-lines{
+//     .progress-bar li:nth-child(#{$i + 1}){
+//         left: #{$i + "%"};
+//     }
+// }
+
+
+// .progress-bar .small-3 img{
+//     @include animation(fade-icon-left 1.5s ease-out forwards);
+// }
+// .progress-bar h4{
+//     @include animation(fade-number-right 1.5s ease-out forwards);
+// }
+
+// @include keyframes(fade-icon-left) {
+//     0% {
+//         opacity: 0;
+//         @include transform(translateX(-30px));
+//     }
+//     100% {
+//         opacity: 1;
+//         @include transform(translateX(0));
+//     }
+// }
+// @include keyframes(fade-number-right) {
+//     0% {
+//         opacity: 0;
+//         @include transform(translateX(30px) translateY(-50%));
+//     }
+//     100% {
+//         opacity: 1;
+//         @include transform(translateX(0) translateY(-50%));
+//     }
+// }

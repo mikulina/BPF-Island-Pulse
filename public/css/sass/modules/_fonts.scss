@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'din_otbold';
+    src: url('#{$FontPath}/dinot-bold-webfont.eot');
+    src: url('#{$FontPath}/dinot-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}/dinot-bold-webfont.woff') format('woff'),
+         url('#{$FontPath}/dinot-bold-webfont.svg#din_otbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+}
+
+@font-face {
+    font-family: 'din_otlight';
+    src: url('#{$FontPath}/dinot-light-webfont.eot');
+    src: url('#{$FontPath}/dinot-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}/dinot-light-webfont.woff') format('woff'),
+         url('#{$FontPath}/dinot-light-webfont.svg#din_otlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+}
+
+@font-face {
+    font-family: 'din_otmedium';
+    src: url('#{$FontPath}/dinot-medium-webfont.eot');
+    src: url('#{$FontPath}/dinot-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('#{$FontPath}/dinot-medium-webfont.woff') format('woff'),
+         url('#{$FontPath}/dinot-medium-webfont.svg#din_otmedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-variant:normal;
+}

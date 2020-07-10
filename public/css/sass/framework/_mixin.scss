@@ -1,0 +1,97 @@
+// Mixins
+// --------------------------------
+
+// Animation & Keyframes
+@mixin keyframes($name) {
+    @-webkit-keyframes $name { @content; }
+    @-moz-keyframes $name { @content; }
+    @-o-keyframes $name { @content; }
+    @keyframes $name { @content; }
+}
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};
+}
+
+// Circles
+@mixin fill-circle($size, $color) {
+    width: $size;
+    height: $size;
+    background: $color;
+    @include border-radius(50%);
+}
+@mixin outline-circle($size, $stroke, $color) {
+    width: $size;
+    height: $size;
+    background: transparent;
+    border: $stroke solid $color;
+    @include border-radius(50%);
+}
+
+@mixin put-on-circle(
+            $circle-size,
+            $circle-stroke,
+            $stroke-color,
+            $nb-items, //Number of items
+            $item-width,
+            $item-height,
+            $item-color: transparent,
+            $class-for-IE: false //Base class name, false means use of pseudo-selectors
+          ) {
+  $half-item: $item-width / 2;
+  $half-parent: ($circle-size + $circle-stroke) / 2;
+
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  background: transparent;
+  border: $circle-stroke solid $stroke-color;
+  padding: 0;
+  list-style: none;
+  @include border-radius(50%);
+  @include box-sizing(content-box);
+
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    width:  $item-width;
+    height: $item-height;
+    background: $item-color;
+    margin: ((-$item-height / 2) + 0.5) (-$half-item);
+    @include transition(all 50ms);
+
+    $angle: 180 / $nb-items;
+    $rot: 0;
+    @for $i from 1 to $nb-items+1 {
+      // If no support for IE8-
+      @if $class-for-IE == false {
+        &:nth-of-type(#{$i}) {
+          @include transform(rotate(#{$rot}deg) translate($half-parent) rotate(-#{$rot}deg) rotate(#{$rot + 90}deg));
+        }
+      }
+      // If support for IE8- If CSS transforms are not supported
+      @else {
+        &.#{$class-for-IE}#{$i} {
+          $mt: sin($rot * pi() / 180) * $half-parent - $half-item;
+          $ml: cos($rot * pi() / 180) * $half-parent - $half-item;
+          margin: $mt 0 0 $ml;
+        }
+      }
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+// Triangles
+@mixin triangle-down-right($border-right, $border-bottom, $color) {
+  border-right: $border-right solid $color;
+  border-bottom: $border-bottom solid transparent;
+}
+@mixin triangle-up-right($border-right, $border-top, $color) {
+  border-right: $border-right solid $color;
+  border-top: $border-top solid transparent;
+}
