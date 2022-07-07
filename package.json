@@ -17,7 +17,7 @@
     "express": "~3.3.4",
     "jade": "~0.34.0",
     "lodash": "~2.4.1",
-    "moment": "2.23.0",
+    "moment": "2.29.4",
     "moment-timezone": "0.5.23",
     "mysql2": "^1.6.4",
     "sqlbits": "~2.1.0",
