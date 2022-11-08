@@ -27,13 +27,13 @@
     "bower": "1.8.4",
     "connect-cache-manifest": "^0.2.0",
     "eyes": "0.1.8",
-    "grunt": "~0.4.1",
-    "grunt-bowercopy": "^1.1.0",
+    "grunt": "~1.5.3",
+    "grunt-bowercopy": "^1.2.5",
     "grunt-contrib-compass": "^0.7.2",
-    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-watch": "~1.1.0",
     "grunt-develop": "~0.2.2",
     "grunt-fingerprint": "^0.2.0",
-    "load-grunt-tasks": "~0.2.0",
+    "load-grunt-tasks": "~5.1.0",
     "request": "~2.27.0",
     "time-grunt": "~0.1.1"
   }
