@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "MD5": "~1.2.0",
-    "express": "~3.3.4",
+    "express": "~4.17.3",
     "jade": "~0.34.0",
     "lodash": "~2.4.1",
     "moment": "2.23.0",
